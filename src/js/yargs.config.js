@@ -2,20 +2,31 @@ const yargs = require('yargs');
 yargs.command({
     command: 'create',
     describe: '[create new contact]',
-    'builder': {
-        fullName: {
-            'command': 'fullname',
-            'describe': '[contact fullname]',
-            'alias': 'f',
+    builder: {
+        fullname: {
+            command: 'fullname',
+            describe: '[contact fullname]',
             demandOption: true,
-            type:'string'
+            'alias': 'f',
+            type: 'string'
         },
         'email': {
-
+            command: 'email',
+            describe: '[contact email]',
+            demandOption: true,
+            'alias': 'e',
+            type: 'string'
         },
-        'fullName': {
-
+        'phone': {
+            command: 'phone',
+            describe: '[contact phone]',
+            demandOption: true,
+            'alias': 'p',
+            type: 'string'
         },
+    },
+    handler:(args)=>{
+            console.log(args)
     }
 })
-console.log(yargs.argv)
+yargs.parse()
