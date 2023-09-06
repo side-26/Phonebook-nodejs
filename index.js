@@ -1,7 +1,7 @@
 require('./src/js/addNewFile');
 require('./src/js/createFile');
 require('./src/js/addNewContact');
-require('./src/js/yargs.config');
+require('./src/js/yargs.command');
 // const yargs = require('yargs');
 // yargs.command({
 //     command: 'create',
