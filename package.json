@@ -4,8 +4,11 @@
   "description": "first project with node.js\r this project define a phonebook with node.js",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0"
+  }
 }
